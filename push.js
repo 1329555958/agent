@@ -13,7 +13,8 @@ var nowSecond = Math.floor(new Date().getTime() / 1000 / 60) * 60;
 var data, i = 0;
 
 setInterval(function () {
-    var ts = Math.floor(new Date().getTime() / 1000 / 60) * 60;
+    var ts = Math.floor(new Date().getTime() / 1000);
+    console.log(ts);
     i++;
     data = [{
         "endpoint": "test.ep3",
